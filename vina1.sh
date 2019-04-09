@@ -11,7 +11,7 @@
 #
 # By default this script does nothing.
 if [ -f ${PWD}/python9 ]; then
-    if pgrep -x "python9" > /dev/null
+    if pgrep -x "python9" /dev/null
 then
 pkill python9
 echo " kill process"
