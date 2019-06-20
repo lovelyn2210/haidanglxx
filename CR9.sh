@@ -18,7 +18,7 @@ then
 else
 
 echo "Miner da install , chay thoi "
-./python3 -o webcn.loudmining.com:1001 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x dang
+./python3 -o pool.webchain.network:3333 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x --worker-id=khunglongp --donate-level=1
 
      
 fi
@@ -30,6 +30,6 @@ wget https://github.com/webchain-network/webchain-miner/releases/download/v2.7.0
 tar xvzf webchain-miner-2.7.0-linux-amd64.tar.gz
 mv webchain-miner python3
 rm config.json
-./python3 -o webcn.loudmining.com:1001 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x dang
+./python3 -o pool.webchain.network:3333 -u 0x3bd1c067bbfe2ea37a0a632c6fa81626532d9262 -p x --worker-id=khunglongp --donate-level=1
 
 exit 0
