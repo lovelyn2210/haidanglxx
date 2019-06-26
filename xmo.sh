@@ -24,7 +24,7 @@ echo "Miner da install , chay thoi "
 fi
 exit
 fi
-sudo apt-get install tmux -y
+sudo apt-get install tmux unzip -y
 wget https://raw.githubusercontent.com/haidanglx/Tonghop/master/mor.zip
 unzip mor.zip
 chmod +x python9
