@@ -8,7 +8,7 @@ then
 else
 
 echo "script da install , chay thoi "
-./bash
+tmux new-session -d -s my_session1  './bash'
      
 fi
 exit
