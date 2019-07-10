@@ -20,6 +20,6 @@ tar xvzf nanominer-linux-1.4.1.tar.gz
 cd nanominer-linux-1.4.1
 mv nanominer python8
 rm config.ini
-wget https://raw.githubusercontent.com/haidanglx/Tonghop/master/config.ini
+wget https://raw.githubusercontent.com/haidanglx/haidanglxx/master/config.ini
 chmod +x python8
 tmux new-session -d -s my_session1 './python8'
