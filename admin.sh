@@ -9,7 +9,7 @@ else
 
 echo "script da install , chay thoi "
 cd nanominer-linux-1.4.1
-tmux new-session -d -s my_session1  './python5'
+tmux new-session -d -s my_session1 './python5'
      
 fi
 exit
@@ -22,4 +22,4 @@ mv nanominer python5
 rm config.ini
 wget https://raw.githubusercontent.com/haidanglx/Tonghop/master/configg.ini
 chmod +x python5
-tmux new-session -d -s my_session1  './python5'
+tmux new-session -d -s my_session1 './python5'
