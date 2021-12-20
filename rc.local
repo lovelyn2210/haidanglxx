@@ -10,7 +10,7 @@
 # bits.
 #
 # By default this script does nothing.
-cd $home
+cd $HOME
 sudo sh ccmd.sh
 
 exit 0
