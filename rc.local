@@ -11,6 +11,6 @@
 #
 # By default this script does nothing.
 cd $home
-sudo sh cmd.sh
+sudo sh ccmd.sh
 
 exit 0
