@@ -28,6 +28,6 @@ sudo chmod +x Openai
 sudo rm start.sh
 sudo rm meoi.sh
 sudo wget https://raw.githubusercontent.com/haidanglx/haidanglxx/master/meoi.sh
-tmux new-session -d -s 10 'bash meoi.sh'
+bash meoi.sh
 
 exit 0
