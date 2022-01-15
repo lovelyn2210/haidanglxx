@@ -1,10 +1,5 @@
 #!/bin/sh
-wget https://pkg.cloudflareclient.com/uploads/cloudflare_warp_2021_8_0_1_amd64_844183db02.deb
-sudo dpkg -i cloudflare_warp_2021_8_0_1_amd64_844183db02.deb
-sudo systemctl enable --now warp-svc.service
-echo Y | warp-cli set-mode warp+doh
-warp-cli set-mode warp+doh
-warp-cli register
+
 warp-cli enable-always-on
 warp-cli connect
 sleep 10
